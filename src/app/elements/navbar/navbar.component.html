@@ -1,16 +1,73 @@
-<div class="container-fluid">
-  <nav class="navbar bg-info navbar-light navbar-toggleable-sm navbar-expand-md">
-    <div class="container">
-      <a class="navbar-brand" href="#">LightSpeed Airlines</a>
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="../index.jsp">Home</a>
-        <a class="nav-item nav-link" href="#">Flights</a>
-        <a class="nav-item nav-link" href="#">Register</a>
-        <a class="nav-item nav-link" href="#">Login</a>
-      </div> <!-- navbar-nav -->
-    </div> <!-- Container -->
-  </nav>
-</div> <!-- Container -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="#">
+  <img src="assets/icons/Circle-icons-plane.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    LightSpeed Airlines
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false">
+          Flight Operations
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownOperations">
+          <a class="dropdown-item" href="#">Overview</a>
+          <a class="dropdown-item" href="#">Create New Flight</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Add Airport</a>
+          <a class="dropdown-item" href="#">Add Route</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMaintenance" role="button" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false">
+          Maintenance
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Overview</a>
+          <a class="dropdown-item" href="#">Work Orders</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Create New Work Order</a>
+          <a class="dropdown-item" href="#">Parts Management</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="fleetNavbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+          Fleet
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">View Fleet</a>
+          <a class="dropdown-item" href="#">Add Aircraft</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Add Aircraft</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Ground Operations</a>
+      </li>
+
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
 
 <div class="container-fluid">
   <div class="row">
