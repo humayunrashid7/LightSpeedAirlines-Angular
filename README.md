@@ -1,5 +1,8 @@
 # LightspeedAirlines
 
+This is a personal project for learning purposes about an imaginary airline called "LightSpeed Airlines".
+The purpose is to learn and gain atleast intermediate level skills about Angular. The backend is part of a different project in Asp.Net Core 2.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
 
 ## Development server
