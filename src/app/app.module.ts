@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
@@ -12,6 +13,9 @@ import { AircraftDetailComponent } from './aircrafts/aircraft-detail/aircraft-de
 import { AircraftListItemComponent } from './aircrafts/aircraft-list/aircraft-list-item/aircraft-list-item.component';
 import { NavbarLeftsideComponent } from './elements/navbar-leftside/navbar-leftside.component';
 
+const appRoutes: Routes = [
+  { path: 'fleet', component: AircraftListComponent}
+  ];
 
 @NgModule({
   declarations: [
@@ -26,7 +30,8 @@ import { NavbarLeftsideComponent } from './elements/navbar-leftside/navbar-lefts
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
