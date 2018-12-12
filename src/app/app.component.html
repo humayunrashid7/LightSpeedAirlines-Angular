@@ -3,23 +3,22 @@
 
   <app-navbar></app-navbar>
 
+  <div class="container-fluid">
+    <div class="row" >
 
-<div class="row" >
+      <!--<div id="navSidebar" class="col pr-0" style="background-color: #78d5db">-->
+      <nav id="navSidebar" class="">
 
-  <div id="navSidebar" class="col pr-0" style="background-color: #78d5db">
+          <app-navbar-leftside></app-navbar-leftside>
 
-      <app-navbar-leftside></app-navbar-leftside>
+      </nav>
 
-  </div>
+      <div id="mainContent" class="col">
 
-  <div id="mainContent" class="col-md-10" style="height: 100vh; background-color: #eaf8f9">
-    <div class="container-fluid">
-      <div class="row">
-        <app-aircraft-list></app-aircraft-list>
+            <router-outlet></router-outlet>
+
       </div>
+
     </div>
   </div>
-
-</div>
-
 </div>

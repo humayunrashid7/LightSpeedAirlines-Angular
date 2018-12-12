@@ -1,10 +1,43 @@
+<div class="wrapper">
+  <div class="container">
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <h3>Welcome:</h3>
+    </div>
 
-<div class="list-group align-items-center">
-  <a href="#" class="list-group-item list-group-item-action">Fleet Home</a>
-  <a href="#" class="list-group-item list-group-item-action">View Fleet</a>
-  <a href="#" class="list-group-item list-group-item-action">Add Aircraft</a>
-  <a href="#" class="list-group-item list-group-item-action">Link 4</a>
-  <a href="#" class="list-group-item list-group-item-action">Link 5</a>
+    <ul class="nav nav-pills flex-column">
+      <p>Humayun Rashid</p>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Flight Operations</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Maintenance</a>
+      </li>
+      <li class="nav-item">
+        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">Fleet</a>
+        <ul class="collapse list-unstyled" id="pageSubmenu">
+          <li class="nav-item">
+            <a routerLink="/fleet" class="nav-link">View Fleet</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Add Aircraft</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Page 3</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Ground Operations</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  </div>
 </div>
+
 
 

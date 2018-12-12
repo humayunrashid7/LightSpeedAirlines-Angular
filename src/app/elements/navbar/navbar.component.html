@@ -10,10 +10,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
 
+      <!--START: Home Menu-->
       <li class="nav-item active">
-        <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink="/" [routerLinkActive]="active">Home<span class="sr-only">(current)</span></a>
       </li>
+      <!--END: Home Menu-->
 
+      <!--START: Flight Operations Menu-->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
            aria-haspopup="true" aria-expanded="false">
@@ -27,7 +30,9 @@
           <a class="dropdown-item" href="#">Add Route</a>
         </div>
       </li>
+      <!--END: Flight Operations Menu-->
 
+      <!--START: Maintenance Menu-->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMaintenance" role="button" data-toggle="dropdown"
            aria-haspopup="true" aria-expanded="false">
@@ -41,23 +46,28 @@
           <a class="dropdown-item" href="#">Parts Management</a>
         </div>
       </li>
+      <!--END: Maintenance Menu-->
 
+      <!--START: Fleet Menu-->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFleet" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
           Fleet
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">View Fleet</a>
+          <a class="dropdown-item" routerLink="/fleet" [routerLinkActive]="active">View Fleet</a>
           <a class="dropdown-item" href="#">Add Aircraft</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Add Aircraft</a>
         </div>
       </li>
+      <!--END: Fleet Menu-->
 
+      <!--START: Ground Operations Menu-->
       <li class="nav-item">
         <a class="nav-link" href="#">Ground Operations</a>
       </li>
+      <!--END: Ground Operations Menu-->
 
     </ul>
 
