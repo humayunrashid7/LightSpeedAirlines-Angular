@@ -27,7 +27,7 @@
           <a class="dropdown-item" href="#">Create New Flight</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Add Airport</a>
-          <a class="dropdown-item" href="#">Add Route</a>
+          <a class="dropdown-item" routerLink="/addroute">Add Route</a>
         </div>
       </li>
       <!--END: Flight Operations Menu-->
@@ -56,7 +56,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" routerLink="/fleet" [routerLinkActive]="active">View Fleet</a>
-          <a class="dropdown-item" href="#">Add Aircraft</a>
+          <a class="dropdown-item" routerLink="/addaircraft">Add Aircraft</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Add Aircraft</a>
         </div>
@@ -71,7 +71,7 @@
 
     </ul>
 
-    <button type="button" class="btn btn-outline-primary" href="#">Login</button>
+    <button type="button" class="btn btn-outline-primary" routerLink="/login">Login</button>
 
   </div>
 </nav>

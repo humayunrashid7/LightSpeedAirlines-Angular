@@ -13,10 +13,16 @@ import { AircraftDetailComponent } from './aircrafts/aircraft-detail/aircraft-de
 import { AircraftListItemComponent } from './aircrafts/aircraft-list/aircraft-list-item/aircraft-list-item.component';
 import { NavbarLeftsideComponent } from './elements/navbar-leftside/navbar-leftside.component';
 import { HomeComponent } from './home/home.component';
+import { AircraftFormComponent } from './aircrafts/aircraft-form/aircraft-form.component';
+import { RouteFormComponent } from './routes/route-form/route-form.component';
+import { RouteListComponent } from './routes/route-list/route-list.component';
+import { RouteDetailComponent } from './routes/route-detail/route-detail.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'fleet', component: AircraftListComponent},
+  { path: 'addaircraft', component: AircraftFormComponent},
+  { path: 'addroute', component: RouteFormComponent},
   { path: 'login', component: LoginComponent}
 ];
 
@@ -30,7 +36,11 @@ const appRoutes: Routes = [
     AircraftDetailComponent,
     AircraftListItemComponent,
     NavbarLeftsideComponent,
-    HomeComponent
+    HomeComponent,
+    AircraftFormComponent,
+    RouteFormComponent,
+    RouteListComponent,
+    RouteDetailComponent,
   ],
   imports: [
     BrowserModule,
