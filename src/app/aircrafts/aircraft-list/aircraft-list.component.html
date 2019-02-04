@@ -14,25 +14,28 @@
           <th scope="col">FIN</th>
           <th scope="col">Manufacture Date</th>
           <th scope="col">IATA Code</th>
-          <th scope="col">ICAO Code</th>
+          <th scope="col">Delete</th>
         </tr>
       </thead>
 
       <tbody>
-        <tr
-          *ngFor="let aircraft of aircrafts">
+        <tr *ngFor="let aircraft of aircrafts">
           <td>{{ aircraft.id }}</td>
           <td>{{ aircraft.manufacturer }}</td>
           <td>{{ aircraft.model }}</td>
           <td>{{ aircraft.registration }}</td>
           <td>{{ aircraft.fin }}</td>
           <td>{{ aircraft.manufactureDate }}</td>
-          <td>{{ aircraft.aircraftIATACode }}</td>
-          <td>{{ aircraft.aircraftICAOCode }}</td>
+          <td>{{ aircraft.capacity}}</td>
+          <td>
+            <button class="btn btn-primary" (click)="onDeleteAircraft(aircraft.id)">Delete Aircraft</button>
+          </td>
         </tr>
       </tbody>
 
     </table>
   </div>
 </div>
+  <button class="btn btn-primary" (click)="onRefreshList()">Refresh Aircraft List</button>
+
 </div>

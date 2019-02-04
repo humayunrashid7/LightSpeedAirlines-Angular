@@ -1,24 +1,27 @@
-export class Aircraft {
+import {IResource} from '../models/resource.model';
+import {ILink} from '../models/link.model';
 
-  public id: number;
-  public manufacturer: string;
-  public model: string;
-  public registration: string;
-  public fin: string;
-  public manufactureDate: string;
-  public aircraftIATACode: string;
-  public aircraftICAOCode: string;
+export class Aircraft implements IResource {
 
+  id: number;
+  manufacturer: string;
+  model: string;
+  registration: string;
+  fin: string;
+  manufactureDate: string;
+  capacity: number;
+  links: ILink[];
 
   constructor(id: number, manufacturer: string, model: string, registration: string, fin: string,
-              manufactureDate: string, aircraftIATACode: string, aircraftICAOCode: string) {
+              manufactureDate: string, capacity: number, links: ILink[]) {
     this.id = id;
     this.manufacturer = manufacturer;
     this.model = model;
     this.registration = registration;
     this.fin = fin;
     this.manufactureDate = manufactureDate;
-    this.aircraftIATACode = aircraftIATACode;
-    this.aircraftICAOCode = aircraftICAOCode;
+    this.capacity = capacity;
+    this.links = links;
   }
+
 }
